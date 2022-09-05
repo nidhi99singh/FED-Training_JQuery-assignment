@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="register-form">
+        <form id="form">
+            <h2>Registration Form</h2>
+            <input type="text" name="First Name" id="fname" placeholder="enter first name" class="style" required/><br><br>
+            <input type="text" name="Last Name" id="lname" placeholder="enter last name" class="style" required /><br><br>
+            <label>Gender : </label>
+            <input type="radio" name="Gender" value="male"> Male
+            <input type="radio" name="Gender" value="female"> Female<br><br>
+            <input type="email" name="Email" id="email" placeholder="enter email" class="style" required/><br><br>
+            <label>Select state:  </label>
+            <select name="State" class="style1">
+                <option disabled>Select State</option>
+                <option>Rajasthan</option>
+                <option>Punjab</option>
+                <option>Maharashtra</option>
+                <option>Bihar</option>
+            </select><br><br>
+            <fieldset>
+                <legend>select programming language</legend>
+                <input type="checkbox" name="Language" class="language" value="java">Java
+                <input type="checkbox" name="Language" class="language" value="c">C
+                <input type="checkbox" name="Language" class="language" value="javascript">JavaScript
+                <input type="checkbox" name="Language" class="language" value="cpp">C++
+            </fieldset><br><br>
+            <button id="submit" type="button"> Submit</button>
+    
+        </form>
+        <p></p>
+    </div>
+<script>
+    $(document).ready(
+function(){
+    var y=''
+    $('#submit').click(function(){
+        y=$("form").serializeArray()
+        console.log(y)
+       
+    })
+    $('#submit').click(function(){
+        $('p').append("<hr><h5>your have entered the following details</h5>")
+        $.each(y,function(i,field){
+            $('p').append(field.name+ " "+ " : " + field.value+ " "+ "<br/>")
+        })
+       
+    })
+}
+)
+</script>
+</body>
+</html>
