@@ -1,0 +1,73 @@
+input {
+  padding: 5px;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+}
+
+.style {
+  width: 300px;
+}
+
+#register-form {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-items: center;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+::-moz-placeholder {
+  border: none;
+  border-bottom: 2px solid;
+}
+
+:-ms-input-placeholder {
+  border: none;
+  border-bottom: 2px solid;
+}
+
+::placeholder {
+  border: none;
+  border-bottom: 2px solid;
+}
+
+button {
+  font-size: 24px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+}
+
+h2 {
+  color: purple;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 26px;
+  font-style: italic;
+}
+
+.style1 {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+
+table, tr, td {
+  padding: 5px;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=register.css.map */
